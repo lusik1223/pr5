@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Цитати</title>
+  <script>
+    function showQuote(author) {
+      var quote;
+
+
+      switch(author) {
+        case 'І. Репін':
+          quote = 'Відчуваю й усвідомлюю, яка це красива й легка українська мова.';
+          break;
+        case 'Олександр Олесь':
+          quote = 'Для всіх ти мертва і смішна, Для всіх ти бідна і нещасна, Моя Україно пре-красна, Пісень і волі сторона.';
+          break;
+        case 'Л. Толстой':
+          quote = 'Слово є вчинок.';
+          break;
+        case 'А. Міцкевич':
+          quote = 'Народна пісня-духовне обличчя нації.';
+          break;
+        case 'О. Довженко':
+          quote = 'Українська пісня — це бездонна душа українського народу, це його слава.';
+          break;
+        case 'П. Тичина':
+          quote = 'Я єсть народ, якого Правди сила ніким звойована ще не була.';
+          break;
+        default:
+          quote = 'Вислів не знайдено.';
+          break;
+      }
+
+      alert(author + ':\n\n' + quote);
+    }
+  </script>
+</head>
+<body>
+<h1>Цитати</h1>
+
+<button onclick="showQuote('І. Репін')">І. Репін</button>
+<button onclick="showQuote('Олександр Олесь')">Олександр Олесь</button>
+<button onclick="showQuote('Л. Толстой')">Л. Толстой</button>
+<button onclick="showQuote('А. Міцкевич')">А. Міцкевич</button>
+<button onclick="showQuote('О. Довженко')">О. Довженко</button>
+<button onclick="showQuote('П. Тичина')">П. Тичина</button>
+</body>
+</html>

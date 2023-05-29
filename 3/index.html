@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Математичні функції й константи</title>
+  <script>
+    function calculate() {
+      // Константы
+      var constants = [
+        "Значення константи е = " + Math.E,
+        "Значення константи π = " + Math.PI,
+        "Десятковий логарифм постійної Ейлера (е) = " + Math.LN10,
+        "Двійковий логарифм постійної Ейлера (е) = " + Math.LOG2E,
+        "Натуральний логарифм числа 10 = " + Math.LN10,
+        "Натуральний логарифм числа 2 = " + Math.LN2,
+        "Корінь квадратний із двох = " + Math.SQRT2,
+        "Корінь квадратний з однієї другої = " + Math.SQRT1_2
+      ];
+
+      // Функции по номеру варианта (вариант 5)
+      var functions = [
+        "Модуль числа -5: y = " + Math.abs(-5),
+        "Косинус числа 3: y = " + Math.cos(3),
+        "Синус числа 2: y = " + Math.sin(2),
+        "Тангенс числа 1: y = " + Math.tan(1),
+        "Округлення числа 4.7: y = " + Math.round(4.7)
+      ];
+
+      // Генератор случайных чисел от 1 до 10
+      var randomNum = Math.floor(Math.random() * 10) + 1;
+
+      var output = "<h2>КОНСТАНТИ:</h2>";
+      for (var i = 0; i < constants.length; i++) {
+        output += "<p>" + constants[i] + "</p>";
+      }
+
+      output += "<h2>Функції по номеру варіанта (5):</h2>";
+      for (var j = 0; j < functions.length; j++) {
+        output += "<p>" + functions[j] + "</p>";
+      }
+
+      output += "<h2>Генератор випадкових чисел:</h2>";
+      output += "<p>Випадкове число від 1 до 10: " + randomNum + "</p>";
+
+      document.getElementById("output").innerHTML = output;
+    }
+  </script>
+</head>
+<body>
+<h1>Математичні функції й константи</h1>
+<button onclick="calculate()">Виконати</button>
+<div id="output"></div>
+</body>
+</html>
